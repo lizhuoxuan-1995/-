@@ -1,1 +1,4 @@
-var a = 2
+var a = 356
+function test() {
+  console.log(123)
+}
