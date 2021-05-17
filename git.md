@@ -70,3 +70,15 @@ $ git stash list: 查看
 $ git stash pop: 恢复的同时删除stash内容, 等同于: $ git stash apply: 恢复 + git stash drop: 删除
 
 $ git stash apply stash@{index}: 多次stash时，恢复到指定版本  越早stash的版本index越大
+
+
+
+## 配置别名
+
+$ git config --global alias.st status: status --> st
+
+**本地配置对照
+co --> checkout
+ci --> commit
+br --> branch
+li --> log --pretty=oneline
