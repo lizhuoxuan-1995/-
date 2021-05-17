@@ -50,9 +50,20 @@ $ git checkout -- file： 撤销工作区
 
 
 ## 分支
-$ git checkout -b dev: 创建dev分支，并切换到dev分支， 等同于：$ git branch dev，$ git checkout dev
+$ git switch -c dev: 创建dev分支，并切换到dev分支， 等同于：$ git branch dev，$ git switch dev
 $ git branch： 查看当前分支，git branch命令会列出所有分支，**当前分支**前面会标一个*号。
 
 $ git merge dev： 合并**指定分支(dev)**到**当前分支**
 
 git branch -d dev: 删除dev分支
+
+
+## 临时隐藏文件
+
+$ git stash 
+
+$ git stash list: 查看
+
+$ git stash pop: 恢复的同时删除stash内容, 等同于: $ git stash apply: 恢复 + git stash drop: 删除
+
+$ git stash apply stash@{0}: 多次stash时，恢复到指定版本
