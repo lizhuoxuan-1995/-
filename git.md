@@ -42,6 +42,12 @@ $ git reset HEAD readme.txt 把暂存区的修改撤销掉（unstage），重新
 $ git rm readme.txt 从版本库中删除该文件, 并且git commit
 tips: 手动删除文件后，使用git rm <file>和git add<file>效果是一样的。
 
+** 分部回退一个版本
+$ git reset --soft HEAD：撤销commit
+$ git reset HEAD file： 撤销add
+$ git checkout -- file： 撤销工作区
+
+
 
 ## 分支
 $ git checkout -b dev: 创建dev分支，并切换到dev分支， 等同于：$ git branch dev，$ git checkout dev
